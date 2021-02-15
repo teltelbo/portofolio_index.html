@@ -477,6 +477,15 @@ body main {
   z-index: 0;
 }
 
+body main #profile, body main #skills {
+  padding-bottom: 70px;
+  background: rgba(203, 226, 236, 0.589);
+}
+
+body main #works, body main #contact {
+  padding-bottom: 70px;
+}
+
 body main .Tab-Btn-Radio {
   display: none;
 }
@@ -509,7 +518,8 @@ body main .contents div.show h2, body main .contents div.show p {
 }
 
 body main .contents div h2 {
-  margin-top: 70px;
+  text-align: center;
+  padding-top: 70px;
   font-family: 'Noto Sans JP', sans-serif;
   font-size: 30px;
   font-weight: bold;
@@ -519,6 +529,8 @@ body main .contents div h2 {
 }
 
 body main .contents div p {
+  margin: auto;
+  text-align: center;
   line-height: 1.6;
   font-family: 'Noto Sans JP', sans-serif;
   font-size: 14px;
@@ -562,7 +574,7 @@ body main .contents div .works .works-name p a:hover {
   width: 120%;
   height: 120%;
   margin: 0 auto;
-  background: rgba(64, 129, 182, 0.219);
+  background: rgba(203, 226, 236, 0.589);
   transition: 0.5s;
   opacity: 0.6;
 }
@@ -589,7 +601,8 @@ body footer p {
     position: fixed;
     top: 0;
     border-bottom: solid 1px rgba(64, 129, 182, 0.219);
-    opacity: 0.8;
+    background: rgba(12, 140, 199, 0.8);
+    color: #FFF;
   }
   body header .container .logo {
     font-family: 'Noto Sans JP', sans-serif;
@@ -613,9 +626,8 @@ body footer p {
   body header .container .nav .nav-links li:hover {
     height: 100%;
     margin: 0 auto;
-    background: rgba(64, 129, 182, 0.219);
+    background: rgba(16, 55, 78, 0.603);
     transition: 0.5s;
-    opacity: 0.5;
   }
   body header .container .nav .nav-links li a {
     font-size: 16px;
@@ -630,7 +642,8 @@ body footer p {
 
 @media screen and (max-width: 768px) {
   body header .container .logo {
-    background: #FFF;
+    background: rgba(12, 140, 199, 0.8);
+    color: #FFF;
     position: fixed;
     top: 0;
     font-family: 'Noto Sans JP', sans-serif;
@@ -642,7 +655,6 @@ body footer p {
     z-index: 20;
     animation: titleAnimation 1.5s;
     border-bottom: solid 1px rgba(64, 129, 182, 0.219);
-    opacity: 0.8;
   }
   body header .container .nav {
     font-family: 'Noto Sans JP', sans-serif;
@@ -652,7 +664,8 @@ body footer p {
     left: 0;
     right: 0;
     width: 100%;
-    background: #fff;
+    background: rgba(12, 140, 199, 0.8);
+    color: #FFF;
     opacity: 0.8;
   }
   body header .container .nav .nav-links {
@@ -673,9 +686,8 @@ body footer p {
   }
   body header .container .nav .nav-links li:hover {
     margin: 0 auto;
-    background: rgba(64, 129, 182, 0.219);
+    background: rgba(16, 55, 78, 0.603);
     transition: 0.5s;
-    opacity: 0.5;
   }
   body header .container .nav .nav-links li a {
     text-decoration: none;
@@ -684,6 +696,9 @@ body footer p {
   }
   body main {
     z-index: 10;
+  }
+  body main p {
+    margin: auto;
   }
   body main .works {
     width: 100%;
